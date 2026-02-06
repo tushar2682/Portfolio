@@ -14,13 +14,13 @@ export default function About() {
               <span className="text-gradient">About Me</span>
             </h2>
             <p className="text-xl text-gray-300 mb-6 leading-relaxed">
-              I'm an innovative Full-Stack Developer with hands-on experience in AI, 
-              Machine Learning, Cloud Computing, and Game Development. Currently pursuing 
+              I'm an innovative Full-Stack Developer with hands-on experience in AI,
+              Machine Learning, Cloud Computing, and Game Development. Currently pursuing
               B.Tech in Computer Science and Engineering at Graphic Era Hill University.
             </p>
             <p className="text-lg text-gray-400 mb-8 leading-relaxed">
-              I specialize in designing scalable, user-centric applications with 
-              measurable performance improvements. My expertise spans from web-based 
+              I specialize in designing scalable, user-centric applications with
+              measurable performance improvements. My expertise spans from web-based
               animation tools to AI-driven applications and decentralized systems.
             </p>
 
@@ -49,9 +49,9 @@ export default function About() {
               <h3 className="text-xl font-bold text-yellow-400 mb-4">Education</h3>
               <div className="bg-gray-800/50 rounded-lg p-4 border border-gray-700/50">
                 <p className="text-white font-semibold">B.Tech Computer Science & Engineering</p>
-                <p className="text-gray-300">Graphic Era Hill University</p>
+                <p className="text-gray-300">Graphic Era Hill University, Dehradun</p>
                 <p className="text-gray-400 text-sm mt-2">
-                  Concentrations: Full-stack Development, Intelligence and Modelling/Simulations
+                  Aug 2022 - Present | GPA: 7.1
                 </p>
               </div>
             </div>
@@ -63,19 +63,20 @@ export default function About() {
             <GlassCard className="p-4 md:p-8">
               <div className="relative">
                 <div className="w-80 h-80 md:w-96 md:h-96 mx-auto rounded-2xl overflow-hidden border-4 border-gradient-to-r from-yellow-400 via-orange-400 to-yellow-300 shadow-2xl">
-                  <img 
-                    src="https://i.ibb.co/rGqGDYNF/Whats-App-Image-2025-08-24-at-9-13-07-AM.jpg" 
-                    alt="Profile Picture - Aman Bhardwaj" 
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png"
+                    // TODO: Replace this URL with your actual LinkedIn profile picture URL
+                    alt="Profile Picture - Tushar Uniyal"
                     className="w-full h-full object-cover object-center transition-transform duration-500 hover:scale-105"
                   />
                 </div>
-                
+
                 {/* Decorative Frame Elements */}
                 <div className="absolute -top-2 -left-2 w-6 h-6 border-t-4 border-l-4 border-yellow-400 rounded-tl-lg"></div>
                 <div className="absolute -top-2 -right-2 w-6 h-6 border-t-4 border-r-4 border-yellow-400 rounded-tr-lg"></div>
                 <div className="absolute -bottom-2 -left-2 w-6 h-6 border-b-4 border-l-4 border-yellow-400 rounded-bl-lg"></div>
                 <div className="absolute -bottom-2 -right-2 w-6 h-6 border-b-4 border-r-4 border-yellow-400 rounded-br-lg"></div>
-                
+
                 {/* Glow Effect */}
                 <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-yellow-400/20 via-orange-400/20 to-yellow-300/20 blur-xl -z-10"></div>
               </div>

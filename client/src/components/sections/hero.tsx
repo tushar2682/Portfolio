@@ -224,22 +224,22 @@ export default function Hero() {
 
       {/* Hero Content */}
       <div className="container mx-auto px-6 text-center z-10 relative">
-        <motion.div 
+        <motion.div
           className="mb-8"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
-          <motion.h1 
+          <motion.h1
             className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 bg-gradient-to-r from-yellow-400 via-orange-400 to-yellow-400 bg-clip-text text-transparent"
             initial={{ scale: 0.9, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             transition={{ duration: 1, delay: 0.2 }}
           >
-            Aman Bhardwaj
+            Tushar Uniyal
           </motion.h1>
 
-          <motion.p 
+          <motion.p
             className="text-2xl md:text-3xl text-gray-300 mb-4"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -249,7 +249,7 @@ export default function Hero() {
           </motion.p>
         </motion.div>
 
-        <motion.div 
+        <motion.div
           className="text-lg md:text-xl text-gray-400 mb-8 max-w-3xl mx-auto"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -266,7 +266,7 @@ export default function Hero() {
           </p>
         </motion.div>
 
-        <motion.div 
+        <motion.div
           className="flex flex-col sm:flex-row gap-4 justify-center"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -330,6 +330,6 @@ export default function Hero() {
           <span className="text-xs text-gray-500">Scroll</span>
         </motion.div>
       </motion.div>
-    </section>
+    </section >
   );
 }

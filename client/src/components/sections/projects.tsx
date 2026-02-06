@@ -6,109 +6,64 @@ import { motion } from "framer-motion";
 const projects = [
   {
     id: "01",
-    title: "Project Tweak",
+    title: "Nebu-Trader",
     description:
-      "Procreate-inspired web-based animation and drawing application with AI-driven stylus support, custom tool creation, flipbook animations, character rigging, and layer-based canvas management.",
+      "Advanced trading automation terminal with workflow creation, backtesting, and real-time execution. Includes user authentication, trade management, and portfolio analytics.",
     image:
-      "https://images.unsplash.com/photo-1561736778-92e52a7769ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-    alt: "Creative digital art application interface with drawing tools and animation features",
-    technologies: [
-      "JavaScript",
-      "React.js",
-      "Canvas API",
-      "AI Motion Capture",
-      "Responsive UI/UX"
-    ],
-    stats: [
-      { value: "AI-powered", label: "Stylus Support" },
-      { value: "Real-time", label: "Animation" },
-    ],
-    period: "Sep 2022 – Dec 2022"
-  },
-  {
-    id: "02",
-    title: "Project Zero",
-    description:
-      "Simulation modeling the Big Bang and human-like AI characters using reinforcement learning, N-body simulation, GANs, Genetic Algorithms, NEAT, and PSO to enable AI agents to mimic human behavior.",
-    image:
-      "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-    alt: "AI simulation visualization with neural networks and evolutionary algorithms",
-    technologies: [
-      "Python",
-      "TensorFlow",
-      "Reinforcement Learning",
-      "GANs",
-      "Genetic Algorithms"
-    ],
-    stats: [
-      { value: "AI-driven", label: "Behavior" },
-      { value: "Multi-algo", label: "Approach" },
-    ],
-    period: "Jan 2023 – May 2023"
-  },
-  {
-    id: "03",
-    title: "Project Cast",
-    description:
-      "Cross-platform web application enabling OS emulation (macOS, Windows, Linux, Android) using hardware-based para-virtualization with cloud integration for optimized performance and accessibility.",
-    image:
-      "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-    alt: "Virtual machine interface showing multiple operating systems running simultaneously",
-    technologies: [
-      "JavaScript",
-      "Node.js",
-      "Para-virtualization",
-      "Cloud Integration",
-      "WebRTC"
-    ],
-    stats: [
-      { value: "4+", label: "OS Support" },
-      { value: "Cloud", label: "Optimized" },
-    ],
-    period: "Jun 2023 – Aug 2023"
-  },
-  {
-    id: "04",
-    title: "Project CRoG",
-    description:
-      "AI-driven web application for automated accounting, featuring ledger management, tax calculation, and financial forecasting with 87% accuracy in tax liability prediction based on 2024 Indian government policies.",
-    image:
-      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-    alt: "AI-powered accounting dashboard with financial analytics and tax calculation features",
+      "https://images.unsplash.com/photo-1611974765270-ca12586343bb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
+    alt: "Trading Bot Dashboard",
     technologies: [
       "Python",
       "Flask",
-      "Scikit-learn",
-      "Random Forest Models",
-      "Financial API Integration"
+      "React",
+      "Vite",
+      "Redis",
+      "SocketIO"
     ],
     stats: [
-      { value: "87%", label: "Accuracy" },
-      { value: "2024", label: "Tax Policies" },
-      { value: "Real-time", label: "Processing" },
+      { value: "Auto", label: "Trading" },
+      { value: "Live", label: "Analytics" },
     ],
-    period: "Aug 2024 – Dec 2024"
+    period: "2024"
   },
   {
-    id: "05",
-    title: "Project E4K",
+    id: "02",
+    title: "Metaverse",
     description:
-      "Browser-based game with data storage and retrieval using Supabase, integrated in-game purchase payment gateway, and optimized sprite management reducing game lag by 25%.",
+      "A virtual environment enabling immersive user interactions. Built with 3D rendering technologies for a seamless experience.",
     image:
-      "https://images.unsplash.com/photo-1493711662062-fa541adb3fc8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-    alt: "Browser-based game interface with payment integration and optimized performance",
+      "https://images.unsplash.com/photo-1614726365723-49faaa3f2c00?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
+    alt: "Metaverse Virtual Environment",
     technologies: [
       "JavaScript",
-      "Phaser.js",
-      "Supabase",
-      "Payment Gateway",
-      "Responsive CSS"
+      "3D Rendering",
+      "WebSockets"
     ],
     stats: [
-      { value: "25%", label: "Lag Reduction" },
-      { value: "Cross-device", label: "Compatible" },
+      { value: "3D", label: "World" },
+      { value: "Immersive", label: "Exp." },
     ],
-    period: "Jan 2025 – Apr 2025"
+    period: "2023"
+  },
+  {
+    id: "03",
+    title: "Chat App",
+    description:
+      "Real-time messaging application enabling instant communication between users with secure message delivery.",
+    image:
+      "https://images.unsplash.com/photo-1611606063065-ee7946f0787a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
+    alt: "Chat Application Interface",
+    technologies: [
+      "React",
+      "Node.js",
+      "Socket.io",
+      "Express"
+    ],
+    stats: [
+      { value: "Real-time", label: "Chat" },
+      { value: "Secure", label: "Msgs" },
+    ],
+    period: "2023"
   }
 ];
 
@@ -139,11 +94,10 @@ export default function Projects() {
             >
               <div className="grid lg:grid-cols-2 gap-8 md:gap-12 lg:gap-16 items-center">
                 <motion.div
-                  className={`${
-                    index % 2 === 0
-                      ? "order-2 lg:order-1"
-                      : "order-1 lg:order-2"
-                  }`}
+                  className={`${index % 2 === 0
+                    ? "order-2 lg:order-1"
+                    : "order-1 lg:order-2"
+                    }`}
                   whileHover={{
                     scale: 1.02,
                     rotateY: index % 2 === 0 ? 5 : -5,
@@ -222,11 +176,10 @@ export default function Projects() {
                 </motion.div>
 
                 <motion.div
-                  className={`${
-                    index % 2 === 0
-                      ? "order-1 lg:order-2"
-                      : "order-2 lg:order-1"
-                  } px-4 sm:px-0`}
+                  className={`${index % 2 === 0
+                    ? "order-1 lg:order-2"
+                    : "order-2 lg:order-1"
+                    } px-4 sm:px-0`}
                   initial={{ opacity: 0, x: index % 2 === 0 ? 50 : -50 }}
                   animate={isVisible ? { opacity: 1, x: 0 } : {}}
                   transition={{ duration: 0.8, delay: index * 0.3 }}

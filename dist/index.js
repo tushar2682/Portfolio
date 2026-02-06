@@ -5,6 +5,9 @@ import express2 from "express";
 import { createServer } from "http";
 async function registerRoutes(app2) {
   const httpServer = createServer(app2);
+  app2.get("/api/health", (req, res) => {
+    res.json({ status: "ok", mode: app2.get("env") });
+  });
   return httpServer;
 }
 
@@ -98,7 +101,7 @@ app.use((req, res, next) => {
       port,
       host: "0.0.0.0"
     }, () => {
-      log(`serving on port ${port}`);
+      log(`serving on port ${port} in ${app.get("env")} mode`);
     });
   }
 })();

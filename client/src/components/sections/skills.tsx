@@ -10,29 +10,23 @@ const techCategories = [
     color: "#61DAFB",
     icon: "🎨",
     technologies: [
-      { name: "React", logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg", proficiency: 95, years: 4 },
-      { name: "Next.js", logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/nextjs/nextjs-original.svg", proficiency: 90, years: 3 },
-      { name: "TypeScript", logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg", proficiency: 88, years: 3 },
-      { name: "JavaScript", logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg", proficiency: 92, years: 5 },
-      { name: "Vue.js", logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/vuejs/vuejs-original.svg", proficiency: 85, years: 2 },
-      { name: "Tailwind CSS", logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/tailwindcss/tailwindcss-plain.svg", proficiency: 93, years: 3 },
-      { name: "Three.js", logo: "https://raw.githubusercontent.com/mrdoob/three.js/dev/files/icon.svg", proficiency: 80, years: 2 },
-      { name: "Framer Motion", logo: "https://www.framer.com/images/favicons/favicon.svg", proficiency: 87, years: 2 }
+      { name: "HTML/CSS", logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg", proficiency: 95, years: 4 },
+      { name: "JavaScript", logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg", proficiency: 90, years: 4 },
+      { name: "React", logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg", proficiency: 85, years: 2 },
+      { name: "Tailwind CSS", logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/tailwindcss/tailwindcss-plain.svg", proficiency: 90, years: 3 }
     ]
   },
   {
-    title: "Backend Development",
+    title: "Programming Languages",
     color: "#68A063",
-    icon: "⚡",
+    icon: "💻",
     technologies: [
-      { name: "Node.js", logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg", proficiency: 90, years: 4 },
-      { name: "Python", logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg", proficiency: 92, years: 5 },
-      { name: "Express.js", logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original.svg", proficiency: 88, years: 4 },
-      { name: "Django", logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/django/django-plain.svg", proficiency: 85, years: 3 },
-      { name: "Flask", logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/flask/flask-original.svg", proficiency: 87, years: 3 },
-      { name: "FastAPI", logo: "https://fastapi.tiangolo.com/img/logo-margin/logo-teal.png", proficiency: 83, years: 2 },
-      { name: "GraphQL", logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/graphql/graphql-plain.svg", proficiency: 78, years: 2 },
-      { name: "REST APIs", logo: "https://img.icons8.com/color/48/000000/api.png", proficiency: 93, years: 4 }
+      { name: "C", logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg", proficiency: 90, years: 4 },
+      { name: "C++", logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg", proficiency: 90, years: 4 },
+      { name: "Java", logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg", proficiency: 85, years: 3 },
+      { name: "Python", logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg", proficiency: 92, years: 4 },
+      { name: "Kotlin", logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/kotlin/kotlin-original.svg", proficiency: 80, years: 2 },
+      { name: "SQL", logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg", proficiency: 85, years: 3 }
     ]
   },
   {
@@ -44,7 +38,7 @@ const techCategories = [
       { name: "PostgreSQL", logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original.svg", proficiency: 85, years: 3 },
       { name: "MySQL", logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg", proficiency: 82, years: 3 },
       { name: "Redis", logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/redis/redis-original.svg", proficiency: 80, years: 2 },
-      { name: "Supabase", logo: "https://supabase.com/favicon/favicon-32x32.png", proficiency: 87, years: 2 },
+
       { name: "Firebase", logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/firebase/firebase-plain.svg", proficiency: 83, years: 3 }
     ]
   },
@@ -53,12 +47,11 @@ const techCategories = [
     color: "#FF6F00",
     icon: "🤖",
     technologies: [
-      { name: "TensorFlow", logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/tensorflow/tensorflow-original.svg", proficiency: 88, years: 3 },
-      { name: "PyTorch", logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/pytorch/pytorch-original.svg", proficiency: 85, years: 3 },
-      { name: "Scikit-learn", logo: "https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg", proficiency: 90, years: 4 },
-      { name: "OpenCV", logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/opencv/opencv-original.svg", proficiency: 82, years: 2 },
-      { name: "Pandas", logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/pandas/pandas-original.svg", proficiency: 93, years: 4 },
-      { name: "NumPy", logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/numpy/numpy-original.svg", proficiency: 91, years: 4 }
+      { name: "PyTorch", logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/pytorch/pytorch-original.svg", proficiency: 85, years: 2 },
+      { name: "YoloV8", logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/opencv/opencv-original.svg", proficiency: 85, years: 2 },
+      { name: "Pandas", logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/pandas/pandas-original.svg", proficiency: 90, years: 3 },
+      { name: "NumPy", logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/numpy/numpy-original.svg", proficiency: 90, years: 3 },
+      { name: "Streamlit", logo: "https://streamlit.io/images/brand/streamlit-mark-color.png", proficiency: 85, years: 2 }
     ]
   },
   {
@@ -66,8 +59,7 @@ const techCategories = [
     color: "#4285F4",
     icon: "☁️",
     technologies: [
-      { name: "AWS", logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original.svg", proficiency: 85, years: 3 },
-      { name: "Google Cloud", logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/googlecloud/googlecloud-original.svg", proficiency: 80, years: 2 },
+
       { name: "Docker", logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg", proficiency: 87, years: 3 },
       { name: "Kubernetes", logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/kubernetes/kubernetes-plain.svg", proficiency: 75, years: 2 },
       { name: "Git", logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg", proficiency: 95, years: 5 },
@@ -123,7 +115,7 @@ export default function Skills() {
 
       <div className="container mx-auto px-4 sm:px-6 relative z-10">
         <div className={`text-center mb-12 md:mb-20 section-enter ${isVisible ? "visible" : ""}`}>
-          <motion.h2 
+          <motion.h2
             className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black mb-4 md:mb-6"
             initial={{ opacity: 0, y: 30 }}
             animate={isVisible ? { opacity: 1, y: 0 } : {}}
@@ -131,7 +123,7 @@ export default function Skills() {
           >
             <span className="text-gradient">Technical Arsenal</span>
           </motion.h2>
-          <motion.p 
+          <motion.p
             className="text-base sm:text-lg md:text-xl text-gray-300 max-w-3xl mx-auto px-4"
             initial={{ opacity: 0 }}
             animate={isVisible ? { opacity: 1 } : {}}
@@ -142,7 +134,7 @@ export default function Skills() {
         </div>
 
         {/* Category Navigation */}
-        <motion.div 
+        <motion.div
           className="flex flex-wrap justify-center gap-2 md:gap-4 mb-12 md:mb-16"
           initial={{ opacity: 0, y: 20 }}
           animate={isVisible ? { opacity: 1, y: 0 } : {}}
@@ -151,11 +143,10 @@ export default function Skills() {
           {techCategories.map((category, index) => (
             <motion.button
               key={category.title}
-              className={`px-4 sm:px-6 py-2 sm:py-3 rounded-full font-bold text-sm sm:text-base transition-all duration-300 flex items-center gap-2 ${
-                selectedCategory === index
-                  ? 'bg-luxury-gold text-black shadow-lg'
-                  : 'bg-white/10 text-white hover:bg-white/20 backdrop-blur-sm border border-white/20'
-              }`}
+              className={`px-4 sm:px-6 py-2 sm:py-3 rounded-full font-bold text-sm sm:text-base transition-all duration-300 flex items-center gap-2 ${selectedCategory === index
+                ? 'bg-luxury-gold text-black shadow-lg'
+                : 'bg-white/10 text-white hover:bg-white/20 backdrop-blur-sm border border-white/20'
+                }`}
               onClick={() => setSelectedCategory(index)}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
@@ -183,8 +174,8 @@ export default function Skills() {
                 initial={{ opacity: 0, scale: 0.8, y: 20 }}
                 animate={{ opacity: 1, scale: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                whileHover={{ 
-                  scale: 1.1, 
+                whileHover={{
+                  scale: 1.1,
                   y: -5,
                   rotateY: 10,
                   rotateX: 5
@@ -218,8 +209,8 @@ export default function Skills() {
                       alt={tech.name}
                       className="w-full h-full object-contain filter drop-shadow-lg"
                       style={{
-                        filter: hoveredTech === tech.name 
-                          ? `drop-shadow(0 0 10px ${techCategories[selectedCategory].color}80)` 
+                        filter: hoveredTech === tech.name
+                          ? `drop-shadow(0 0 10px ${techCategories[selectedCategory].color}80)`
                           : 'drop-shadow(0 0 5px rgba(0,0,0,0.3))'
                       }}
                     />
@@ -298,7 +289,7 @@ export default function Skills() {
                 ease: "linear"
               }}
             />
-            
+
             <div className="relative z-10">
               <motion.div
                 className="text-4xl md:text-6xl text-luxury-gold mb-4 md:mb-6"
@@ -313,8 +304,8 @@ export default function Skills() {
               >
                 "
               </motion.div>
-              
-              <motion.blockquote 
+
+              <motion.blockquote
                 className="text-lg md:text-2xl lg:text-3xl text-gray-300 font-light leading-relaxed mb-4 md:mb-6"
                 initial={{ opacity: 0 }}
                 animate={isVisible ? { opacity: 1 } : {}}
@@ -322,14 +313,14 @@ export default function Skills() {
               >
                 The intersection of <span className="text-luxury-gold font-semibold">artificial intelligence</span> and <span className="text-luxury-platinum font-semibold">human creativity</span> is where the future is built. Every line of code is a step toward tomorrow's possibilities.
               </motion.blockquote>
-              
-              <motion.cite 
+
+              <motion.cite
                 className="text-luxury-gold font-bold text-lg md:text-xl"
                 initial={{ opacity: 0, x: -20 }}
                 animate={isVisible ? { opacity: 1, x: 0 } : {}}
                 transition={{ duration: 0.8, delay: 1 }}
               >
-                — Aman Bhardwaj
+                — Tushar Uniyal
               </motion.cite>
             </div>
           </GlassCard>

@@ -11,5 +11,9 @@ export async function registerRoutes(app: Express): Promise<Server> {
 
   const httpServer = createServer(app);
 
+  app.get("/api/health", (req, res) => {
+    res.json({ status: "ok", mode: app.get("env") });
+  });
+
   return httpServer;
 }

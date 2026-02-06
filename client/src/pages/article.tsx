@@ -69,7 +69,7 @@ The journey ahead is exciting, challenging, and full of potential. By understand
     views: "1.2k",
     image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=600",
     tags: ["AI", "Development", "Future Tech", "Automation"],
-    author: "Aman Bhardwaj"
+    author: "Tushar Uniyal"
   },
   "02": {
     title: "Building Scalable Microservices Architecture",
@@ -143,7 +143,7 @@ Success with microservices comes from starting small, learning from experience, 
     views: "890",
     image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=600",
     tags: ["Microservices", "Scalability", "Architecture", "DevOps"],
-    author: "Aman Bhardwaj"
+    author: "Tushar Uniyal"
   },
   "03": {
     title: "WebGL and the Art of Interactive Experiences",
@@ -252,7 +252,7 @@ The key to success lies in understanding the balance between visual fidelity and
     views: "1.5k",
     image: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=600",
     tags: ["WebGL", "Three.js", "Interactive Design", "Performance"],
-    author: "Aman Bhardwaj"
+    author: "Tushar Uniyal"
   }
 };
 
@@ -280,11 +280,11 @@ export default function Article() {
     <div className="min-h-screen bg-luxury-black text-white overflow-x-hidden">
       <ParticleSystem />
       <Navigation />
-      
+
       <main className="pt-32 pb-20">
         <div className="container mx-auto px-6 max-w-4xl">
           {/* Back Button */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
@@ -306,8 +306,8 @@ export default function Article() {
           >
             <GlassCard className="overflow-hidden mb-8">
               <div className="relative">
-                <img 
-                  src={article.image} 
+                <img
+                  src={article.image}
                   alt={article.title}
                   className="w-full h-64 md:h-80 object-cover"
                 />
@@ -355,10 +355,10 @@ export default function Article() {
                   Share
                 </Button>
               </div>
-              
+
               <div className="flex flex-wrap gap-2 mt-4">
                 {article.tags.map((tag) => (
-                  <span 
+                  <span
                     key={tag}
                     className="bg-gray-800 text-gray-300 px-3 py-1 rounded-full text-xs"
                   >
@@ -377,9 +377,9 @@ export default function Article() {
           >
             <GlassCard className="p-8 md:p-12">
               <div className="prose prose-invert prose-lg max-w-none">
-                <div 
+                <div
                   className="article-content"
-                  dangerouslySetInnerHTML={{ 
+                  dangerouslySetInnerHTML={{
                     __html: article.content
                       .split('\n')
                       .map(line => {
@@ -421,7 +421,7 @@ export default function Article() {
           </motion.div>
         </div>
       </main>
-      
+
       <Footer />
     </div>
   );

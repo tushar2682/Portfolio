@@ -35,12 +35,12 @@ export default function Contact() {
           <div className="grid lg:grid-cols-2 gap-16 items-start">
             {/* Contact Form */}
             <div className={`section-enter ${isVisible ? "visible" : ""}`}>
-              <form 
-                name="contact" 
-                method="POST" 
+              <form
+                name="contact"
+                method="POST"
                 data-netlify="true"
                 action="/success"
-                onSubmit={handleSubmit} 
+                onSubmit={handleSubmit}
                 className="space-y-6"
               >
                 <input type="hidden" name="form-name" value="contact" />
@@ -112,7 +112,7 @@ export default function Contact() {
                     <div>
                       <p className="text-gray-400 text-sm">Email</p>
                       <p className="text-white" data-testid="text-email">
-                        aman71204@hotmail.com
+                        tuniyal158@gmail.com
                       </p>
                     </div>
                   </div>
@@ -124,7 +124,7 @@ export default function Contact() {
                     <div>
                       <p className="text-gray-400 text-sm">LinkedIn</p>
                       <p className="text-white" data-testid="text-linkedin">
-                        /in/aman-bhardwaj
+                        /in/tushar-uniyal
                       </p>
                     </div>
                   </div>
@@ -136,7 +136,7 @@ export default function Contact() {
                     <div>
                       <p className="text-gray-400 text-sm">GitHub</p>
                       <p className="text-white" data-testid="text-github">
-                        /aman-bhardwaj
+                        /tushar2682
                       </p>
                     </div>
                   </div>

@@ -5,13 +5,13 @@ export default function Footer() {
     <footer className="py-16 border-t border-luxury-gold border-opacity-20">
       <div className="container mx-auto px-6 text-center">
         <div className="mb-8">
-          <div className="text-3xl font-bold text-gradient mb-4">Aman Bhardwaj</div>
+          <div className="text-3xl font-bold text-gradient mb-4">Tushar Uniyal</div>
           <p className="text-gray-400">Crafting Premium Digital Experiences</p>
         </div>
 
         <div className="flex justify-center space-x-8 mb-8">
           <a
-            href="#"
+            href="https://www.linkedin.com/in/tushar-uniyal-88860419a"
             className="text-gray-400 hover:text-luxury-gold transition-colors duration-300 transform hover:scale-110"
             data-testid="footer-linkedin"
           >
@@ -45,7 +45,7 @@ export default function Footer() {
         </div>
 
         <p className="text-gray-500 text-sm">
-          © 2025 Aman Bhardwaj. All rights reserved. | Crafted with passion, Interest, Skills and love.
+          © 2025 Tushar Uniyal. All rights reserved. | Crafted with passion, Interest, Skills and love.
         </p>
       </div>
     </footer>
