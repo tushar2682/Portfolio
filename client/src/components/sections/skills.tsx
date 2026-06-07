@@ -43,15 +43,15 @@ const techCategories = [
     ]
   },
   {
-    title: "AI & Machine Learning",
+    title: "Fintech & Data Systems",
     color: "#FF6F00",
-    icon: "🤖",
+    icon: "💳",
     technologies: [
-      { name: "PyTorch", logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/pytorch/pytorch-original.svg", proficiency: 85, years: 2 },
-      { name: "YoloV8", logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/opencv/opencv-original.svg", proficiency: 85, years: 2 },
+      { name: "Spring Boot", logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/spring/spring-original.svg", proficiency: 90, years: 3 },
+      { name: "Apache Kafka", logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/apachekafka/apachekafka-original.svg", proficiency: 85, years: 2 },
+      { name: "Spring Security", logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/spring/spring-original.svg", proficiency: 88, years: 2 },
       { name: "Pandas", logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/pandas/pandas-original.svg", proficiency: 90, years: 3 },
-      { name: "NumPy", logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/numpy/numpy-original.svg", proficiency: 90, years: 3 },
-      { name: "Streamlit", logo: "https://streamlit.io/images/brand/streamlit-mark-color.png", proficiency: 85, years: 2 }
+      { name: "REST / gRPC", logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg", proficiency: 92, years: 3 }
     ]
   },
   {

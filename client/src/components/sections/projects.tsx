@@ -6,64 +6,179 @@ import { motion } from "framer-motion";
 const projects = [
   {
     id: "01",
-    title: "Nebu-Trader",
+    title: "Aegis Fintech Transaction Monitoring",
     description:
-      "Advanced trading automation terminal with workflow creation, backtesting, and real-time execution. Includes user authentication, trade management, and portfolio analytics.",
+      "A state-of-the-art, event-driven transaction monitoring system designed to intercept, analyze, and flag fraudulent financial transactions in real-time. Built on a scalable microservices architecture.",
     image:
-      "https://images.unsplash.com/photo-1611974765270-ca12586343bb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-    alt: "Trading Bot Dashboard",
-    technologies: [
-      "Python",
-      "Flask",
-      "React",
-      "Vite",
-      "Redis",
-      "SocketIO"
-    ],
+      "https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
+    alt: "Aegis Fintech Transaction Monitoring Dashboard",
+    technologies: ["Java", "Spring Boot", "Kafka", "PostgreSQL", "React"],
     stats: [
-      { value: "Auto", label: "Trading" },
-      { value: "Live", label: "Analytics" },
+      { value: "Real-time", label: "Fraud Detection" },
+      { value: "Event-driven", label: "Architecture" },
     ],
-    period: "2024"
+    period: "2024",
+    github: "https://github.com/tushar2682/Ai-powered-Fintech-Monitoring.git"
   },
   {
     id: "02",
-    title: "Metaverse",
+    title: "CloudPool Orchestration Platform",
     description:
-      "A virtual environment enabling immersive user interactions. Built with 3D rendering technologies for a seamless experience.",
+      "A high-performance developer Backend-as-a-Service (BaaS) and cloud resource orchestration platform, automating database provisioning and server deployments.",
     image:
-      "https://images.unsplash.com/photo-1614726365723-49faaa3f2c00?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-    alt: "Metaverse Virtual Environment",
-    technologies: [
-      "JavaScript",
-      "3D Rendering",
-      "WebSockets"
-    ],
+      "https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
+    alt: "CloudPool Platform Architecture",
+    technologies: ["Java", "Docker", "Spring Boot", "Redis", "AWS"],
     stats: [
-      { value: "3D", label: "World" },
-      { value: "Immersive", label: "Exp." },
+      { value: "Automated", label: "Provisioning" },
+      { value: "BaaS", label: "Developer Platform" },
     ],
-    period: "2023"
+    period: "2024",
+    github: "https://github.com/tushar2682/CloudPool.git"
   },
   {
     id: "03",
-    title: "Chat App",
+    title: "Stock Broker Backend System",
     description:
-      "Real-time messaging application enabling instant communication between users with secure message delivery.",
+      "An enterprise-grade stock brokerage backend. Core functionalities include transaction matching, secure portfolio balance management, and processing market orders.",
     image:
-      "https://images.unsplash.com/photo-1611606063065-ee7946f0787a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-    alt: "Chat Application Interface",
-    technologies: [
-      "React",
-      "Node.js",
-      "Socket.io",
-      "Express"
-    ],
+      "https://images.unsplash.com/photo-1611974765270-ca12586343bb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
+    alt: "Stock Broker System Backend",
+    technologies: ["Node.js", "Express", "SQL", "JWT Authentication"],
     stats: [
-      { value: "Real-time", label: "Chat" },
-      { value: "Secure", label: "Msgs" },
+      { value: "Secure", label: "Ledger" },
+      { value: "High-throughput", label: "Trading" },
     ],
-    period: "2023"
+    period: "2023",
+    github: "https://github.com/tushar2682/stock-broker-system.git"
+  },
+  {
+    id: "04",
+    title: "Virtual Multithreaded File System",
+    description:
+      "A virtual file system in Java supporting concurrent file modifications. Implements multithreaded readers-writers locks, custom inode directories, and crash resiliency.",
+    image:
+      "https://images.unsplash.com/photo-1600132806370-bf17e65e942f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
+    alt: "File System Architecture",
+    technologies: ["Java", "Multithreading", "OS Architecture", "Concurrency"],
+    stats: [
+      { value: "Concurrent", label: "Locks" },
+      { value: "Virtual VFS", label: "Storage" },
+    ],
+    period: "2023",
+    github: "https://github.com/tushar2682/multithreaded-file-system.git"
+  },
+  {
+    id: "05",
+    title: "Secure Payment Gateway API",
+    description:
+      "A robust financial API handling online checkouts. Supports multi-processor routing, payment tokenization for PCI-compliance, and transaction ledger reconciliation.",
+    image:
+      "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
+    alt: "Secure Payment Gateway Interface",
+    technologies: ["Node.js", "Express", "Crypto API", "Stripe SDK"],
+    stats: [
+      { value: "Secure", label: "Tokenization" },
+      { value: "Reconciled", label: "Ledgers" },
+    ],
+    period: "2024",
+    github: "https://github.com/tushar2682/payment-gateway.git"
+  },
+  {
+    id: "06",
+    title: "Decentralized P2P File Transfer",
+    description:
+      "A custom P2P protocol application built from scratch. Utilizes network sockets, concurrent thread pools, chunk-based splitting, and MD5 file validation.",
+    image:
+      "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
+    alt: "P2P Network Diagram",
+    technologies: ["Java", "Socket Programming", "Cryptography", "Concurrency"],
+    stats: [
+      { value: "Decentralized", label: "Sharing" },
+      { value: "Thread-pooled", label: "Transfers" },
+    ],
+    period: "2023",
+    github: "https://github.com/tushar2682/p2p-file.git"
+  },
+  {
+    id: "07",
+    title: "Compiler Lexical Analyzer",
+    description:
+      "A compilation compiler front-end tokenizing custom programming languages. Features structural code optimization and syntax checking.",
+    image:
+      "https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
+    alt: "Lexical Compiler Structure",
+    technologies: ["Java", "Regular Expressions", "Compiler Design"],
+    stats: [
+      { value: "Optimized", label: "Lexing" },
+      { value: "Tokenized", label: "Grammar" },
+    ],
+    period: "2023",
+    github: "https://github.com/tushar2682/lex-Compiler.git"
+  },
+  {
+    id: "08",
+    title: "Secure MERN Auth with OTP",
+    description:
+      "A secure verification module featuring Nodemailer OTP verification, password hashing, and token-based session cookies.",
+    image:
+      "https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
+    alt: "MERN Authentication OTP System",
+    technologies: ["MongoDB", "Express.js", "React.js", "Node.js", "Nodemailer"],
+    stats: [
+      { value: "Verified", label: "OTP Code" },
+      { value: "Hashed", label: "Passwords" },
+    ],
+    period: "2023",
+    github: "https://github.com/tushar2682/mern-authentication-with-otp-verification.git"
+  },
+  {
+    id: "09",
+    title: "Vercel Build Server Orchestrator",
+    description:
+      "A custom deployment server orchestrating project cloning, package dependency installs, code builds, and static hosting uploads.",
+    image:
+      "https://images.unsplash.com/photo-1618401471353-b98aedd07871?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
+    alt: "Vercel Build Orchestrator",
+    technologies: ["TypeScript", "Node.js", "CLI Tools", "Shell Scripting"],
+    stats: [
+      { value: "Automated", label: "Builds" },
+      { value: "Isolated", label: "Cloning" },
+    ],
+    period: "2024",
+    github: "https://github.com/tushar2682/vercel.git"
+  },
+  {
+    id: "10",
+    title: "Web3 Decentralized Asset Ledger",
+    description:
+      "A Web3 project implementing decentralized smart contracts, enabling transparent peer-to-peer asset transfers on a distributed ledger.",
+    image:
+      "https://images.unsplash.com/photo-1621761191319-c6fb62004040?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
+    alt: "Web3 Ledger System",
+    technologies: ["Solidity", "Hardhat", "Ether.js", "React.js"],
+    stats: [
+      { value: "Smart", label: "Contracts" },
+      { value: "Transparent", label: "Ledger" },
+    ],
+    period: "2024",
+    github: "https://github.com/tushar2682/web3.git"
+  },
+  {
+    id: "11",
+    title: "Interactive Metaverse Environment",
+    description:
+      "An interactive, three-dimensional metaverse environment built with Three.js and custom shader physics, showcasing digital spatial computing.",
+    image:
+      "https://images.unsplash.com/photo-1593508512255-86ab42a8e620?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
+    alt: "Interactive Metaverse Scene",
+    technologies: ["JavaScript", "Three.js", "WebGL", "HTML5 Canvas"],
+    stats: [
+      { value: "3D Spatial", label: "Computing" },
+      { value: "Real-time", label: "Physics" },
+    ],
+    period: "2023",
+    github: "https://github.com/tushar2682/Metaverse.git"
   }
 ];
 
@@ -78,8 +193,8 @@ export default function Projects() {
             <span className="text-gradient">Completed Projects</span>
           </h2>
           <p className="text-base sm:text-lg md:text-xl text-gray-300 max-w-3xl mx-auto px-4">
-            A showcase of innovative projects demonstrating expertise in AI,
-            web development, game development, and cutting-edge technologies with real-world impact.
+            A showcase of software engineering projects demonstrating expertise in Java backend architectures,
+            decentralized P2P networks, secure payment processing systems, and fintech solutions.
           </p>
         </div>
 
@@ -257,6 +372,7 @@ export default function Projects() {
                       <Button
                         className="premium-button w-full sm:w-auto px-4 sm:px-6 md:px-8 py-3 md:py-4 rounded-full transition-all duration-500 font-bold text-sm md:text-base tracking-wide shadow-lg relative overflow-hidden"
                         data-testid={`button-demo-${project.id}`}
+                        onClick={() => window.open(project.github, "_blank")}
                       >
                         <motion.div
                           className="absolute inset-0 bg-gradient-to-r from-white/30 to-transparent"

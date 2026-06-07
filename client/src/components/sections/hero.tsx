@@ -245,7 +245,7 @@ export default function Hero() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5, duration: 0.8 }}
           >
-            Full-Stack Developer & AI Engineer
+            Java Backend Developer & Software Engineer
           </motion.p>
         </motion.div>
 
@@ -256,13 +256,13 @@ export default function Hero() {
           transition={{ delay: 0.7, duration: 0.8 }}
         >
           <p className="mb-4">
-            Innovative and results-driven developer specializing in{" "}
-            <span className="text-yellow-400 font-semibold">AI & Machine Learning</span>,{" "}
-            <span className="text-orange-400 font-semibold">Cloud Computing</span>, and{" "}
-            <span className="text-yellow-300 font-semibold">scalable web applications</span>.
+            Innovative and results-driven software engineer specializing in{" "}
+            <span className="text-yellow-400 font-semibold">Java Backend Development</span>,{" "}
+            <span className="text-orange-400 font-semibold">Fintech & Payment Systems</span>, and{" "}
+            <span className="text-yellow-300 font-semibold">Digital Solutions</span>.
           </p>
           <p className="text-gray-500">
-            Transforming complex challenges into elegant, user-centric solutions that drive performance improvements and optimize efficiency.
+            Designing secure, high-performance distributed architectures, secure transaction layers, and scalable enterprise applications.
           </p>
         </motion.div>
 

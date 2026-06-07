@@ -14,14 +14,13 @@ export default function About() {
               <span className="text-gradient">About Me</span>
             </h2>
             <p className="text-xl text-gray-300 mb-6 leading-relaxed">
-              I'm an innovative Full-Stack Developer with hands-on experience in AI,
-              Machine Learning, Cloud Computing, and Game Development. Currently pursuing
+              I'm an innovative Java Backend Developer and Software Engineer. Currently pursuing
               B.Tech in Computer Science and Engineering at Graphic Era Hill University.
             </p>
             <p className="text-lg text-gray-400 mb-8 leading-relaxed">
-              I specialize in designing scalable, user-centric applications with
-              measurable performance improvements. My expertise spans from web-based
-              animation tools to AI-driven applications and decentralized systems.
+              I specialize in designing secure, scalable digital products and microservice infrastructures.
+              My core interests lie in fintech architectures, digital payments, high-performance concurrency,
+              and distributed systems.
             </p>
 
             <div className="grid grid-cols-2 gap-6">

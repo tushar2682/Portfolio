@@ -1,3 +1,5 @@
+# Specific routes
+/success   /success.html   200
 
-/*    /index.html   200
-/success /success.html 200
+# SPA catch-all — must be last
+/*   /index.html   200

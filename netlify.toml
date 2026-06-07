@@ -1,19 +1,80 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# Tushar Uniyal — Portfolio · Netlify Configuration
+# ─────────────────────────────────────────────────────────────────────────────
 
+# ── Build Settings ────────────────────────────────────────────────────────────
 [build]
-  command = "npm run build"
-  publish = "dist/public"
+  command   = "npm run build"
+  publish   = "dist/public"
+
+[build.environment]
+  NODE_VERSION = "20"
+  NODE_ENV     = "production"
+
+# ── Dev Server (netlify dev) ──────────────────────────────────────────────────
+[dev]
+  command   = "npm run dev"
+  port      = 5000
+  targetPort = 5000
+  publish   = "client"
+
+# ── SPA Client-Side Routing ───────────────────────────────────────────────────
+# Must come BEFORE the catch-all redirect
 
 [[redirects]]
-  from = "/api/*"
-  to = "/.netlify/functions/api/:splat"
+  from   = "/article/*"
+  to     = "/index.html"
   status = 200
 
+# Portfolio success page
 [[redirects]]
-  from = "/article/*"
-  to = "/index.html"
+  from   = "/success"
+  to     = "/success.html"
   status = 200
 
+# Catch-all — serve index.html for every non-file route (SPA)
 [[redirects]]
-  from = "/*"
-  to = "/index.html"
+  from   = "/*"
+  to     = "/index.html"
   status = 200
+
+# ── HTTP Headers ──────────────────────────────────────────────────────────────
+
+# Long-lived cache for hashed Vite assets (JS/CSS bundles)
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control          = "public, max-age=31536000, immutable"
+    X-Content-Type-Options = "nosniff"
+
+# Static public files (favicon, fonts, images)
+[[headers]]
+  for = "/public/*"
+  [headers.values]
+    Cache-Control = "public, max-age=86400, stale-while-revalidate=604800"
+
+# HTML pages — always re-validate
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "no-cache, no-store, must-revalidate"
+    Pragma        = "no-cache"
+
+# Global security + performance headers on every response
+[[headers]]
+  for = "/*"
+  [headers.values]
+    # Prevent clickjacking
+    X-Frame-Options            = "DENY"
+    # Stop MIME sniffing
+    X-Content-Type-Options     = "nosniff"
+    # XSS filter (legacy browsers)
+    X-XSS-Protection           = "1; mode=block"
+    # HTTPS only for 1 year
+    Strict-Transport-Security  = "max-age=31536000; includeSubDomains; preload"
+    # Limit referrer info
+    Referrer-Policy            = "strict-origin-when-cross-origin"
+    # Permissions / Feature Policy
+    Permissions-Policy         = "camera=(), microphone=(), geolocation=(), payment=()"
+    # Content Security Policy — tightened for portfolio
+    Content-Security-Policy    = "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://images.unsplash.com https://raw.githubusercontent.com https://avatars.githubusercontent.com https://upload.wikimedia.org https://streamlit.io https://static.expo.dev https://avatars.githubusercontent.com; connect-src 'self'; frame-ancestors 'none'"
