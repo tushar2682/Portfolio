@@ -7,7 +7,6 @@ console.log("Loading vite.config.ts...");
 export default defineConfig({
   plugins: [
     react(),
-    react(),
   ],
   resolve: {
     alias: {
