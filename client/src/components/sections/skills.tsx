@@ -6,52 +6,36 @@ import { useState } from "react";
 
 const techCategories = [
   {
-    title: "Frontend Development",
-    color: "#61DAFB",
-    icon: "🎨",
-    technologies: [
-      { name: "HTML/CSS", logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg", proficiency: 95, years: 4 },
-      { name: "JavaScript", logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg", proficiency: 90, years: 4 },
-      { name: "React", logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg", proficiency: 85, years: 2 },
-      { name: "Tailwind CSS", logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/tailwindcss/tailwindcss-plain.svg", proficiency: 90, years: 3 }
-    ]
-  },
-  {
-    title: "Programming Languages",
-    color: "#68A063",
-    icon: "💻",
-    technologies: [
-      { name: "C", logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg", proficiency: 90, years: 4 },
-      { name: "C++", logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg", proficiency: 90, years: 4 },
-      { name: "Java", logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg", proficiency: 85, years: 3 },
-      { name: "Python", logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg", proficiency: 92, years: 4 },
-      { name: "Kotlin", logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/kotlin/kotlin-original.svg", proficiency: 80, years: 2 },
-      { name: "SQL", logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg", proficiency: 85, years: 3 }
-    ]
-  },
-  {
-    title: "Database & Storage",
+    title: "Core Java & Backend",
     color: "#F29111",
-    icon: "🗄️",
+    icon: "☕",
     technologies: [
-      { name: "MongoDB", logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg", proficiency: 90, years: 4 },
-      { name: "PostgreSQL", logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original.svg", proficiency: 85, years: 3 },
-      { name: "MySQL", logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg", proficiency: 82, years: 3 },
-      { name: "Redis", logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/redis/redis-original.svg", proficiency: 80, years: 2 },
-
-      { name: "Firebase", logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/firebase/firebase-plain.svg", proficiency: 83, years: 3 }
+      { name: "Java", logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg", proficiency: 95, years: 4 },
+      { name: "Spring Boot", logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/spring/spring-original.svg", proficiency: 92, years: 3 },
+      { name: "Hibernate", logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/hibernate/hibernate-original.svg", proficiency: 88, years: 3 },
+      { name: "Microservices", logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg", proficiency: 90, years: 3 }
     ]
   },
   {
-    title: "Fintech & Data Systems",
+    title: "Fintech & Payments",
     color: "#FF6F00",
     icon: "💳",
     technologies: [
-      { name: "Spring Boot", logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/spring/spring-original.svg", proficiency: 90, years: 3 },
+      { name: "Payment Gateways", logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original.svg", proficiency: 85, years: 2 },
+      { name: "Spring Security", logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/spring/spring-original.svg", proficiency: 90, years: 3 },
+      { name: "OAuth2", logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/oauth/oauth-original.svg", proficiency: 88, years: 2 },
+      { name: "REST APIs", logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg", proficiency: 95, years: 4 }
+    ]
+  },
+  {
+    title: "Database & Messaging",
+    color: "#34D399",
+    icon: "🗄️",
+    technologies: [
+      { name: "PostgreSQL", logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original.svg", proficiency: 90, years: 3 },
+      { name: "MySQL", logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg", proficiency: 88, years: 3 },
       { name: "Apache Kafka", logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/apachekafka/apachekafka-original.svg", proficiency: 85, years: 2 },
-      { name: "Spring Security", logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/spring/spring-original.svg", proficiency: 88, years: 2 },
-      { name: "Pandas", logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/pandas/pandas-original.svg", proficiency: 90, years: 3 },
-      { name: "REST / gRPC", logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg", proficiency: 92, years: 3 }
+      { name: "Redis", logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/redis/redis-original.svg", proficiency: 82, years: 2 }
     ]
   },
   {
@@ -59,21 +43,10 @@ const techCategories = [
     color: "#4285F4",
     icon: "☁️",
     technologies: [
-
-      { name: "Docker", logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg", proficiency: 87, years: 3 },
-      { name: "Kubernetes", logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/kubernetes/kubernetes-plain.svg", proficiency: 75, years: 2 },
-      { name: "Git", logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg", proficiency: 95, years: 5 },
-      { name: "GitHub Actions", logo: "https://avatars.githubusercontent.com/u/44036562?s=48&v=4", proficiency: 82, years: 2 }
-    ]
-  },
-  {
-    title: "Mobile Development",
-    color: "#34D399",
-    icon: "📱",
-    technologies: [
-      { name: "React Native", logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg", proficiency: 85, years: 2 },
-      { name: "Flutter", logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/flutter/flutter-original.svg", proficiency: 78, years: 2 },
-      { name: "Expo", logo: "https://static.expo.dev/static/brand/square-228x228.png", proficiency: 83, years: 2 }
+      { name: "Docker", logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg", proficiency: 85, years: 2 },
+      { name: "Kubernetes", logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/kubernetes/kubernetes-plain.svg", proficiency: 75, years: 1 },
+      { name: "AWS", logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg", proficiency: 80, years: 2 },
+      { name: "Git", logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg", proficiency: 95, years: 4 }
     ]
   }
 ];
@@ -311,7 +284,7 @@ export default function Skills() {
                 animate={isVisible ? { opacity: 1 } : {}}
                 transition={{ duration: 1, delay: 0.8 }}
               >
-                The intersection of <span className="text-luxury-gold font-semibold">artificial intelligence</span> and <span className="text-luxury-platinum font-semibold">human creativity</span> is where the future is built. Every line of code is a step toward tomorrow's possibilities.
+                Building the robust backbone of <span className="text-luxury-gold font-semibold">Fintech</span> and <span className="text-luxury-platinum font-semibold">Digital Payments</span>. Crafting scalable Java architectures today to empower the financial ecosystems of tomorrow.
               </motion.blockquote>
 
               <motion.cite

@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
-import { Mail, Linkedin, Github, MapPin } from "lucide-react";
+import { Mail, Linkedin, Github, MapPin, Phone } from "lucide-react";
 
 export default function Contact() {
   const { elementRef, isVisible } = useIntersectionObserver();
@@ -105,6 +105,18 @@ export default function Contact() {
                 </h3>
 
                 <div className="space-y-6">
+                  <div className="flex items-center space-x-4">
+                    <div className="w-12 h-12 glass-morphism rounded-full flex items-center justify-center">
+                      <Phone className="w-5 h-5 text-luxury-gold" />
+                    </div>
+                    <div>
+                      <p className="text-gray-400 text-sm">Phone</p>
+                      <p className="text-white" data-testid="text-phone">
+                        +91 7668146878
+                      </p>
+                    </div>
+                  </div>
+
                   <div className="flex items-center space-x-4">
                     <div className="w-12 h-12 glass-morphism rounded-full flex items-center justify-center">
                       <Mail className="w-5 h-5 text-luxury-gold" />
